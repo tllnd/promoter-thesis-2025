@@ -232,7 +232,9 @@ p_dn <- ggplot(dnase_adult_long, aes(pos, value, group = name, fill = "DNase")) 
   theme(
     strip.text.y = element_text(angle = 0), 
     panel.spacing.y = unit(3, "mm"),
-    legend.position = "none")
+    legend.position = "none",
+    axis.text.x = element_blank(),
+    axis.ticks.x = element_blank())
 
 # histone marker plot
 p_chip <- ggplot(hist_ad_select_long, aes(pos, value, group = name, fill = track)) +

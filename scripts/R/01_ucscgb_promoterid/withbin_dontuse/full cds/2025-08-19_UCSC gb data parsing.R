@@ -1,9 +1,9 @@
-#setwd('~/Library/Mobile Documents/com~apple~CloudDocs/UMassPhD/UMassChan/Tai_Gao/Canavan/UCSC genome browser analyses/2025-08_mAspa figure redo/')
+#setwd('~/Library/Mobile Documents/com~apple~CloudDocs/UMassPhD/UMassChan/Tai_Gao/Canavan/UCSC genome browser analyses/2025-08_mAspa figure redo/full cds/')
 library(ggplot2)
 library(ggfx)
 library(patchwork)
 
-file <- "./2025-08-11_mm9_encode dnase and chip.tracks.tsv"
+file <- "./2025-08-19_mm9_mAspaP_AllTracks_Full cds.tracks.tsv"
 lines <- readLines(file)
 # record start and end line of each section/track
 starts <- grep("^track\\s+name=", lines)
